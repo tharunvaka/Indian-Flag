@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Indian Flag</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #eee;
+    }
+
+    .flag {
+      width: 450px;
+      height: 300px;
+      border: 1px solid black;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .saffron, .white, .green {
+      height: 33.33%;
+      width: 100%;
+    }
+
+    .saffron {
+      background-color: #FF9933;
+    }
+
+    .white {
+      background-color: white;
+      position: relative;
+    }
+
+    .green {
+      background-color: #138808;
+    }
+
+    .ashoka-chakra {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      background: repeating-conic-gradient(
+        navy 0deg 1.5deg,
+        white 1.5deg 15deg
+      );
+      border-radius: 50%;
+      border: 2px solid navy;
+      transform: translate(-50%, -50%);
+    }
+
+    .ashoka-inner-dot {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 6px;
+      height: 6px;
+      background: navy;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="flag">
+    <div class="saffron"></div>
+    <div class="white">
+      <div class="ashoka-chakra">
+        <div class="ashoka-inner-dot"></div>
+      </div>
+    </div>
+    <div class="green"></div>
+  </div>
+</body>
+</html>
